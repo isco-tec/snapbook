@@ -18,6 +18,7 @@ const CardsViewContainer = styled.div<IContainerProps>`
   flex-wrap: wrap;
   justify-content: center;
   padding: 30px;
+  color: white;
 `
 const NormalCard = styled(motion.div)`
   margin: 10px;
