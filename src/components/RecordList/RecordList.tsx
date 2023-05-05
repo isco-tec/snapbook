@@ -13,11 +13,12 @@ interface IContainerProps {
 }
 
 const CardsViewContainer = styled.div<IContainerProps>`
-  background-color: #333344;
+  //background-color: #333344;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 30px;
+  max-width: 1600px;
 `
 const NormalCard = styled(motion.div)`
   margin: 10px;
@@ -49,7 +50,7 @@ function Card(item: IAlbum) {
 
     return (
         <NormalCard>
-            <CardContent layoutId={`card-container-${item.id}`} >
+            <CardContent layoutId={`card-container-${item.id}`}>
                 <Stack height={'full'} p={4} justify={'space-between'}>
                     <Badge textAlign={'center'} fontSize={'4xl'}
                            colorScheme='purple'>{item.id} </Badge>
@@ -60,7 +61,8 @@ function Card(item: IAlbum) {
                     </Text>
                     <Text>{item.user.email}</Text>
                     <motion.div layoutId={`card-toggle-container-open-${item.id}`}>
-                        <Button width={'100%'} onClick={onToggleExpand}><AddIcon boxSize={6}/></Button>
+                        <Button colorScheme='gray' width={'100%'} onClick={onToggleExpand}><AddIcon
+                            boxSize={6}/></Button>
                     </motion.div>
                 </Stack>
             </CardContent>

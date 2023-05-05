@@ -14,7 +14,8 @@ const CardContentContainer = styled.div`
   padding: 30px;
   min-width: 300px;
   border-radius: 10px;
-
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  
   .open {
     top: 0;
     left: 0;
@@ -65,7 +66,7 @@ export function ExpandedAlbumView() {
             <motion.div layoutId={`card-container-${expandedAlbumId}`}>
                 <CardContentContainer ref={ref}>
                     <motion.div layoutId={`card-toggle-container-open-${expandedAlbumId}`}>
-                        <Button width={'100%'} onClick={() => handleToggleExpandAlbum(expandedAlbumId!)}><CloseIcon
+                        <Button colorScheme='gray' width={'100%'} onClick={() => handleToggleExpandAlbum(expandedAlbumId!)}><CloseIcon
                             boxSize={6}/></Button>
                     </motion.div>
                     <SortableList

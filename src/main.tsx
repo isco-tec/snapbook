@@ -8,11 +8,24 @@ import './index.css'
 import {ExpandableStateProvider} from "./context";
 
 const theme = extendTheme({
+    config: {
+        initialColorMode: "dark",
+        useSystemColorMode: false,
+    },
     fonts: {
         heading: `Lora, sans-serif`,
         body: "Montserrat, sans-serif"
     },
+    styles: {
+        global: {
+            body: {
+                bg: '#333344',
+                color: 'white',
+            },
+        },
+    },
 })
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
     <React.StrictMode>
         <ChakraProvider theme={theme}>
