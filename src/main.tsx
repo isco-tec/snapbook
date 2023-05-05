@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App'
 import {ChakraProvider, extendTheme} from "@chakra-ui/react";
-import "@fontsource/milonga"
+import "@fontsource/lora"
 import "@fontsource/montserrat"
 import './index.css'
 import {ExpandableStateProvider} from "./context";

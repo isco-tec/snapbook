@@ -4,9 +4,9 @@ import {Button, CloseButton, useDisclosure} from "@chakra-ui/react";
 import {CloseIcon} from "@chakra-ui/icons";
 import {useFetchPhotos, useComponentVisible} from "../../hooks";
 import {useExpandableStateContext} from "../../context";
-import styled from "styled-components";
 import {IPhoto} from "../../types";
 import {FullImageModal, SortableList, Thumbnail, Overlay} from "../../components";
+import styled from "@emotion/styled";
 
 const CardContentContainer = styled.div`
   background: #1c1c1e;
@@ -23,7 +23,7 @@ const CardContentContainer = styled.div`
     z-index: 1;
     overflow: hidden;
     padding: 40px 0;
-  }
+  } 
 `
 
 const RemoveButtonContainer = styled.div`

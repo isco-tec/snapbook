@@ -1,6 +1,6 @@
 import React from "react";
 import {IPhoto} from "../../types";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 import {motion} from "framer-motion";
 import {Text} from "@chakra-ui/react";
 

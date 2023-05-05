@@ -6,7 +6,7 @@ import {ExpandedAlbumView} from "../../components";
 import {IAlbum, IUser} from "../../types";
 import {Badge, Button, Heading, Stack, Text} from "@chakra-ui/react";
 import {AddIcon} from "@chakra-ui/icons";
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 interface IContainerProps {
     isExpanded: boolean;
