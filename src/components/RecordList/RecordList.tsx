@@ -17,6 +17,7 @@ const CardsViewContainer = styled.div<IContainerProps>`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 30px;
 `
 const NormalCard = styled(motion.div)`
   margin: 10px;
@@ -28,7 +29,6 @@ const NormalCard = styled(motion.div)`
     text-transform: capitalize;
     font-size: 18px;
     padding: 5px;
-    text-align: center;
   }
 `
 
@@ -49,7 +49,7 @@ function Card(item: IAlbum) {
 
     return (
         <NormalCard>
-            <CardContent layoutId={`card-container-${item.id}`}>
+            <CardContent layoutId={`card-container-${item.id}`} >
                 <Stack height={'full'} p={4} justify={'space-between'}>
                     <Badge textAlign={'center'} fontSize={'4xl'}
                            colorScheme='purple'>{item.id} </Badge>

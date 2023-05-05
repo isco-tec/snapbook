@@ -11,7 +11,7 @@ import styled from "@emotion/styled";
 const CardContentContainer = styled.div`
   background: #1c1c1e;
   position: relative;
-  padding: 10px;
+  padding: 30px;
   min-width: 300px;
   border-radius: 10px;
 
@@ -23,7 +23,7 @@ const CardContentContainer = styled.div`
     z-index: 1;
     overflow: hidden;
     padding: 40px 0;
-  } 
+  }
 `
 
 const RemoveButtonContainer = styled.div`
@@ -54,7 +54,6 @@ export function ExpandedAlbumView() {
         setFilteredPhotos(filteredPhotos.filter((photo) => photo.id !== photoId));
     };
     const onThumbnailClick = (key: number) => {
-        console.log('onThumbnailClick', key, filteredPhotos);
         const photo = filteredPhotos.find((photo) => photo.id === key);
         if (!photo) return;
         setSelectedImageSrc(photo.url);

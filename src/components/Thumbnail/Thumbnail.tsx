@@ -61,7 +61,7 @@ export function Thumbnail({photo, onClick}: ThumbnailProps) {
                 alt={photo.title}
             />
             <Overlay variants={overlayVariants} initial={'hidden'} whileHover={'hover'} animate={'show'}>
-                <Text color={'#fff'} noOfLines={3}>{photo.title}</Text>
+                <Text textTransform={'capitalize'} p={2} color={'#fff'} noOfLines={3}>{photo.title}</Text>
             </Overlay>
         </Container>
     );

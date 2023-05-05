@@ -13,7 +13,7 @@ export const Grid: FC<GridProps> = ({ children, columns }) => {
                 gridTemplateColumns: `repeat(${columns}, 1fr)`,
                 gridGap: 10,
                 maxWidth: '1600px',
-                margin: '100px auto',
+                margin: '60px auto 0 auto',
             }}
         >
             {children}
